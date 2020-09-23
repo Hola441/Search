@@ -3,6 +3,19 @@
     <head>
         <title>Google Images</title>
         <style>
+            #test:hover{
+                box-shadow:0 1px 1px rgba(0,0,0,0.1);
+                border-color:-webkit-linear-gradient(top,black,white);
+                border:2px solid #c6c6c6;
+                width: 498px;
+                height: 38px;
+            }
+            .test2:hover{               
+                background-image:-webkit-linear-gradient(top,rgb(247, 247, 247),rgb(226, 226, 226));
+                border:1px solid rgb(184, 184, 184);
+                color:black;
+                margin:1px -1px;
+            }
             form{               
                 margin: 0;
                 position: absolute;
@@ -12,17 +25,22 @@
             }
             #test {
                 border-radius: 100px;
-                width: 400px;
-                height: 35px;
-                font-size: 15px;
+                width: 500px;
+                height: 40px;
+                font-size: 16px;
                 padding-inline-start: 20px;
+                border-color: rgb(216, 216, 216);
+                border-width: 1px;
+                outline: none;
+                border-style: solid;
             }
             .test2 {
-                margin: 2px;
-                padding: 7px;
-                transform: translate(85%);
+                margin: 2px 0px;
+                padding: 10px 15px;
+                transform: translate(110%);
                 width: 75;
                 color:rgb(80, 80, 80); 
+                border: none;
             }
             img {
                 position: absolute;
@@ -54,6 +72,11 @@
                 height: 30px;
                 font-size: 15px;
                 color:rgb(80, 80, 80); 
+                border: none;
+                background-color: white; 
+            }
+            button:hover {
+                text-decoration: underline;
             }
 
        </style>
