@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images</title>
+        <style>
+            form{               
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;                        
+                transform: translate(-50%, -50%);        
+            }
+            #test {
+                border-radius: 100px;
+                width: 400px;
+                height: 35px;
+                font-size: 15px;
+                padding-inline-start: 20px;
+            }
+            .test2 {
+                margin: 2px;
+                padding: 7px;
+                transform: translate(85%);
+                width: 75;
+                color:rgb(80, 80, 80); 
+            }
+            img {
+                position: absolute;
+                top: 25%;
+                left: 50%;                        
+                transform: translate(-50%, -50%);
+                font-size: 60px;
+                font-family: 'Arial Regular';
+                margin: 0px;
+                letter-spacing: 1px;
+            }
+            h2 {
+                position: absolute;
+                font-size: 15px;
+                font-family: 'Arial Regular';
+                padding: 2px;
+                letter-spacing: 1px;
+                top: 27%;
+                left: 50%;
+                transform: translate(140%);
+                color: rgb(0, 80, 185);
+            }
+            button {
+                position: absolute;
+                left: 100%; 
+                top: 10px;                       
+                transform: translate(-110%);
+                width: 100px;
+                height: 30px;
+                font-size: 15px;
+                color:rgb(80, 80, 80); 
+            }
+
+       </style>
+    </head>
+    <body>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <h2>Images</h2>
+        <button type="button" onclick="location.href='Search.html'">Search</button>
+        <form action="http://images.google.com/images">
+            <input id="test" type="text" name="q">
+            <br style=width:10px;></br>
+            <input class="test2" type="submit" value="Search Google Images">
+            <input name="sclient" type="hidden" value="img">
+        </form>
+    </body>
+</html>

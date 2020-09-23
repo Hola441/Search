@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <style>
+            form{               
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;                        
+                transform: translate(-50%, -50%);        
+            }
+            #test {
+                border-radius: 100px;
+                width: 400px;
+                height: 35px;
+                font-size: 15px;
+                padding-inline-start: 20px;
+            }
+            .test2 {
+                margin: 2px;
+                padding: 7px;
+                transform: translate(80%);
+                color:rgb(80, 80, 80); 
+            }
+            br {
+                width: 15px;
+            }
+            img {
+                position: absolute;
+                top: 25%;
+                left: 50%;                        
+                transform: translate(-50%, -50%);
+                margin: 5px;
+            }
+            button {
+                position: absolute;
+                left: 100%; 
+                top: 10px;                       
+                transform: translate(-110%);
+                width: 100px;
+                height: 30px;
+                font-size: 15px;
+                color:rgb(80, 80, 80); 
+            }
+            .images {
+                transform: translate(-220%);
+            }
+
+       </style>
+    </head>
+    <body>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"> 
+        <button class="images" type="button" onclick="location.href='Images.html'">Images</button>
+        <button class="advanced" type="button" onclick="location.href='Advanced.html'">Advanced</button>
+        
+        <form action="http://www.google.com/search" name=f>
+            <input name=hl type=hidden value=en>
+            <input maxlength=2048 name=q title="Google Search" value="" id="test">
+            <br></br>
+            <input name=btnG type=submit value="Google Search" class="test2">
+            <input name=btnI type=submit value="I’m Feeling Lucky" class="test2">
+        </form>
+
+        <!--<form action="https://google.com/search">
+            <input id="test" type="text" name="q" size=30 value="" />
+            <input name="hl" type="hidden" value="en">
+            <br></br>
+            <input class="test2" type="submit" value="Google Search">
+            <input class="test2" name="btnI" type="submit" value="I'm Feeling Lucky" />
+            Currently working on how to get I'm Feeling Lucky to work, don't know how to do it </form>-->
+    </body>
+</html>
