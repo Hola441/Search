@@ -5,15 +5,18 @@
         <style>
             form{               
                 margin: 0;
-                position: absolute;
-                top: 50%;                      
-                transform: translate(0%, -50%);        
+                position: absolute;                
+                transform: translate(50px, 150px);        
             }
-            #test {
+            div {
+                position: absolute;
+                transform: translate(50px, 400%);
+                font-size: 20px;
+            }
+            .test {
                 width: 450px;
-                height: 15px;
+                height: 18px;
                 font-size: 15px;
-                padding-inline-start: 5px;
             }
             .test2 {
                 margin: 2px;
@@ -29,22 +32,16 @@
             }
             br {
                 size: 1px;
-            }
-            h1 {
-                font-size: 30px;
-                font-family: 'Arial Regular';
-                padding: 2px;
-                letter-spacing: 1px;
-            }
+            }            
             h2 {
                 position: absolute;
                 font-size: 20px;
                 font-family: 'Arial Regular';
+                font-weight: 50;
                 padding: 2px;
                 letter-spacing: 1px;
-                top: 10%;
-                transform: translate(50%, 15%);
-                color: rgb(255, 52, 52);
+                transform: translate(40px, 10px);
+                color: rgb(214, 0, 0);
             }
             button {
                 position: absolute;
@@ -54,20 +51,48 @@
                 width: 100px;
                 height: 30px;
                 font-size: 15px;
-                color:rgb(80, 80, 80); 
+                color:rgb(80, 80, 80);                
             }
-
+            #top_button {
+                position: absolute;
+                left: 100%; 
+                top: 10px;                       
+                transform: translate(-110%);
+                width: 100px;
+                height: 30px;
+                font-size: 15px;
+                color:rgb(80, 80, 80); 
+                border: none;
+                background-color: none; 
+            }
+            #top_button:hover {
+                text-decoration: underline;
+            }
+            footer {
+                position: absolute; 
+                transform: translate(-10%, -15%);          
+                background-color: rgb(236, 236, 236); 
+                width: 1680px;
+                height: 60px;
+                z-index: -1;
+            }
+            img {
+                width: 7%;
+                margin: 6px;
+            }
        </style>
     </head>
     <body>
-        <h1>Google</h1> 
-        <h2>Advanced</h2>
-        <button type="button" onclick="location.href='Search.html'">Search</button>
+        <footer> </footer>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <h2>Advanced Search</h2>
+        <button id="top_button" type="button" onclick="location.href='Search.html'">Search</button>
+        <div>Find pages with...</div>
         <form action="https://google.com/search">
-            all these words: <input style="transform: translate(57px)" id="test" type="text" name="as_q"> 
-            <br></br>this exact word: <input style="transform: translate(56px)" id="test" type="text" name="as_epq">
-            <br></br>any of these words: <input style="transform: translate(34px)" id="test" type="text" name="as_oq">
-            <br></br>none of these words: <input style="transform: translate(26px)" id="test" type="text" name="as_eq">
+            all these words: <input style="transform: translate(59px)" class="test" type="text" name="as_q"> 
+            <br></br>this exact word: <input style="transform: translate(57px)" class="test" type="text" name="as_epq">
+            <br></br>any of these words: <input style="transform: translate(34px)" class="test" type="text" name="as_oq">
+            <br></br>none of these words: <input style="transform: translate(26px)" class="test" type="text" name="as_eq">
             <br id="space"></br>
             <input class="test2" type="submit" value="Advanced Search">
         </form>
